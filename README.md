@@ -186,8 +186,8 @@ Olist_ECommerce_Data_Pipeline/
 graph TD
     A[GitHub API] --> B[Azure Data Factory]
     C[MySQL Database] --> B
+    D[MongoDB] --> F
     B --> E[Azure Data Lake - Bronze]
-    D[MongoDB] --> E
     E --> F[Databricks - Data Cleaning]
     F --> G[Azure Data Lake - Silver]
     G --> H[Databricks - ETL Transform]
