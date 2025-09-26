@@ -17,7 +17,7 @@ This project implements a comprehensive end-to-end data pipeline for Olist E-Com
 - 🏗️ **Medallion Architecture**: Implementation of Bronze (raw), Silver (cleaned), and Gold (analytics-ready) layers
 - ⚡ **Big Data Processing**: Leverages Apache Spark for distributed computing and parallel processing
 - 🔄 **OLTP to OLAP Transformation**: Optimizes transactional data for analytical workloads
-- 📊 **Analytics-Ready Views**: Pre-built KPIs and dashboards for immediate business insights
+- 📊 **Analytics-Ready Views**: Pre-built KPIs for immediate business insights
 - 🚀 **Scalable Infrastructure**: Cloud-native architecture supporting large-scale data processing
 
 The pipeline transforms traditional OLTP (Online Transaction Processing) data into optimized OLAP (Online Analytical Processing) structures, enabling efficient analysis and reporting for data scientists, machine learning engineers, data analysts, and business stakeholders.
@@ -37,19 +37,21 @@ Olist_ECommerce_Data_Pipeline/
 │   ├── 01_SQL_MASTER_KEY.sql
 │   ├── 02_SQL_EXTERNAL_FILE_FORMAT.sql
 │   ├── 03_SQL_EXTERNAL_DATA_SOURCE.sql
-│   ├── 04-10_SQL_CET_*.sql                  # Common Expression Tables
+│   ├── 04-10_SQL_CET_*.sql                  # External Tables
 │   └── 11-18_SQL_VIEW_*.sql                 # KPI and analytical views
-├── 📁 data/                                 # Local data storage
-│   ├── processed/                           # Cleaned datasets
-│   └── raw/                                 # Raw source datasets
+├── 📁 data/                                # Local data storage
+│   ├── processed/                           # Datasets for GitHub
+│   └── raw/                                 # Datasets for MySQL and Mongo DB
 ├── 📁 Data_Ingestion_MySQL_MongoDB/         # Database ingestion notebooks
 │   ├── Data_Ingestion_MongoDB.ipynb
 │   └── Data_Ingestion_MySQL.ipynb
 ├── 📁 Databricks_Data_Processing/           # Spark data processing
 │   ├── 01_Databricks_Data_Cleaning.ipynb
 │   └── 02_Databricks_ETL.ipynb
-└── 📁 outputs/                              # Project documentation
-    └── diagrams/                            # Architecture diagrams
+├── 📁 outputs/
+│    └── diagrams/                            # Architecture diagrams
+├── 📁 README.md                              # Project documentation
+└── 📁 requirements.txt                       # Project dependancies
 ```
 
 ## 🚀 Project Implementation Steps
@@ -62,16 +64,21 @@ Olist_ECommerce_Data_Pipeline/
    - Set up Azure Data Factory pipelines to ingest data from GitHub repositories via HTTP requests
    - Configured MySQL connectors for transactional data extraction
    - Implemented MongoDB integration for data enrichment collections
+
    
 2. **Bronze Layer Implementation**
    - Stored raw, unprocessed data in Azure Data Lake Storage Bronze layer
    - Maintained data lineage and audit trails
    - Preserved original data formats for compliance and recovery
 
+
+   
+
 ### Phase 2: Data Processing & Transformation
-**Tools Used**: Azure Databricks, Apache Spark, PySpark, Delta Lake
+**Tools Used**: Azure Databricks, Apache Spark, PySpark
 
 **Implementation**:
+
 3. **Data Cleaning & Preprocessing (Silver Layer)**
    - Leveraged Databricks and Spark for distributed data processing
    - Implemented data quality checks and validation rules
@@ -84,9 +91,10 @@ Olist_ECommerce_Data_Pipeline/
    - Created unified customer and product dimensions
 
 ### Phase 3: Analytics Optimization
-**Tools Used**: Apache Spark, Delta Lake, Parquet Format
+**Tools Used**: Azure Databricks, Apache Spark, Parquet Format
 
 **Implementation**:
+
 5. **OLTP to OLAP Transformation (Gold Layer)**
    - Designed and implemented star schema architecture
    - Created fact tables for orders, delivery metrics, and daily sales
@@ -98,6 +106,7 @@ Olist_ECommerce_Data_Pipeline/
 **Tools Used**: Azure Synapse Analytics, SQL, T-SQL
 
 **Implementation**:
+
 6. **External Tables & Metadata Management**
    - Created external table definitions in Azure Synapse
    - Implemented proper schema mapping and data type optimization
@@ -142,8 +151,8 @@ Olist_ECommerce_Data_Pipeline/
 graph TD
     A[GitHub API] --> B[Azure Data Factory]
     C[MySQL Database] --> B
-    D[MongoDB] --> B
     B --> E[Azure Data Lake - Bronze]
+    D[MongoDB] --> E
     E --> F[Databricks - Data Cleaning]
     F --> G[Azure Data Lake - Silver]
     G --> H[Databricks - ETL Transform]
@@ -163,8 +172,8 @@ graph TD
 ## 👨‍💻 Author & Contact
 
 **DHANA5982**
-- 📧 Email: [Your Email]
-- 💼 LinkedIn: [Your LinkedIn Profile]
+- 📧 Email: sekar.dhana5982@gmail.com
+- 💼 LinkedIn: [DHANASEKAR GOVINDARAJ](https://www.linkedin.com/in/dhanasekar-govindaraj-177096310/)
 - 🐙 GitHub: [DHANA5982](https://github.com/DHANA5982)
 
 ## 🙏 Acknowledgements
