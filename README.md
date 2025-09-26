@@ -51,7 +51,7 @@ Olist_ECommerce_Data_Pipeline/
 ├── 📁 outputs/
 │    └── diagrams/                            # Architecture diagrams
 ├── 📁 README.md                              # Project documentation
-└── 📁 requirements.txt                       # Project dependancies
+└── 📁 requirements.txt                       # Project dependencies
 ```
 
 ## 🚀 Project Implementation Steps
@@ -71,8 +71,12 @@ Olist_ECommerce_Data_Pipeline/
    - Maintained data lineage and audit trails
    - Preserved original data formats for compliance and recovery
 
+**Visuals**: 
+![Data Pipeline](ADF_Data_Ingestion_Pipeline/ADF%20-%20Data%20Ingestion%20Pipeline.JPG)
+*Figure 1: Data Pipeline*
 
-   
+![Ingested Data in Bronze Layer](ADLS_Medallion_Structured_Storage/Bronze/ADLS_Bronze.JPG)
+*Figure 2: Ingested Data in Bronze Layer*
 
 ### Phase 2: Data Processing & Transformation
 **Tools Used**: Azure Databricks, Apache Spark, PySpark
@@ -90,6 +94,11 @@ Olist_ECommerce_Data_Pipeline/
    - Applied business rules and data standardization
    - Created unified customer and product dimensions
 
+**Visuals**: 
+![Ingested Data in Silver Layer](ADLS_Medallion_Structured_Storage/Silver/ADLS_Silver.JPG)
+*Figure 3: Ingested Data in Silver Layer*
+
+
 ### Phase 3: Analytics Optimization
 **Tools Used**: Azure Databricks, Apache Spark, Parquet Format
 
@@ -101,6 +110,14 @@ Olist_ECommerce_Data_Pipeline/
    - Built dimension tables for customers, products, sellers, and geolocation
    - Optimized data storage using Parquet format for query performance
    - Implemented partitioning strategies for big data scalability
+
+**Visuals**: 
+![Databricks Work](Databricks_Data_Processing/Databricks_ETL.jpg)
+*Figure 4: Databricks Transformation*
+
+![Ingested Data in Gold Layer](ADLS_Medallion_Structured_Storage/Gold/ADLS_Gold.jpeg)
+*Figure 5: Ingested Data in Gold Layer*
+
 
 ### Phase 4: Analytics Layer
 **Tools Used**: Azure Synapse Analytics, SQL, T-SQL
@@ -117,6 +134,11 @@ Olist_ECommerce_Data_Pipeline/
    - Created performance dashboards for delivery metrics
    - Developed revenue analysis views by state and seller
    - Implemented customer segmentation and product ranking views
+
+**Visuals**: 
+![Azure Synapse Analytics](Azure_Synapse_CETs_Views/Queries-CETs-Views.JPG)
+*Figure 6: Azure Synapse Analytics Query*
+
 
 ## 🏆 Key Achievements
 
