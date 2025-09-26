@@ -28,11 +28,11 @@ The pipeline transforms traditional OLTP (Online Transaction Processing) data in
 
 **Data Flow**
 
-![Data Flow](outputs/diagrams/Data%20Flow.drawio.png)
+![Data Flow Diagram](outputs/diagrams/Data%20Flow%20Diagram.drawio.png)
 
-**Final Schema Diagram**
+**Star Schema Diagram**
 
-![Schema Diagram](outputs/diagrams/Schema%20Diagram.drawio.png)
+![Star Schema Diagram](outputs/diagrams/Star%20Schema%20Diagram.drawio.png)
 
 
 ## 🏗️ Project Folder Structure
