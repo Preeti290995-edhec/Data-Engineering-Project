@@ -12,6 +12,10 @@
 
 This project implements a comprehensive end-to-end data pipeline for Olist E-Commerce data, transforming raw transactional data into analytics-ready datasets. The pipeline ingests data from multiple sources (GitHub HTTP requests and MySQL databases), processes it through a medallion architecture (Bronze-Silver-Gold), and serves it for downstream analytics and machine learning applications.
 
+**Project Workflow**
+
+![Project Workflow](outputs/diagrams/Project%20Workflow.drawio.png)
+
 **Key Pipeline Features:**
 - 🔄 **Multi-source Data Ingestion**: Automated data collection from GitHub repositories and MySQL databases
 - 🏗️ **Medallion Architecture**: Implementation of Bronze (raw), Silver (cleaned), and Gold (analytics-ready) layers
@@ -21,6 +25,15 @@ This project implements a comprehensive end-to-end data pipeline for Olist E-Com
 - 🚀 **Scalable Infrastructure**: Cloud-native architecture supporting large-scale data processing
 
 The pipeline transforms traditional OLTP (Online Transaction Processing) data into optimized OLAP (Online Analytical Processing) structures, enabling efficient analysis and reporting for data scientists, machine learning engineers, data analysts, and business stakeholders.
+
+**Data Flow**
+
+![Data Flow](outputs/diagrams/Data%20Flow.drawio.png)
+
+**Final Schema Diagram**
+
+![Schema Diagram](outputs/diagrams/Schema%20Diagram.drawio.png)
+
 
 ## 🏗️ Project Folder Structure
 
