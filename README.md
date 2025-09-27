@@ -201,8 +201,7 @@ graph TD
 
 - **Architecture Diagrams**: Available in `/outputs/diagrams/`
 - **SQL Scripts**: Complete set of DDL and view creation scripts in `/Azure_Synapse_CETs_Views/`
-- **Notebooks**: Detailed Jupyter notebooks with step-by-step implementation
-- **Data Models**: Entity-relationship diagrams and schema documentation
+- **Notebooks**: Detailed Jupyter notebooks with step-by-step implementation `/Data_Ingestion_MySQL_MongoDB/`, `/Databricks_Data_Processing`
 
 ## 👨‍💻 Author & Contact
 
