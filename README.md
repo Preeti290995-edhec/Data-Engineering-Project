@@ -221,4 +221,4 @@ graph TD
 
 ---
 
-⭐ **If you found this project helpful, please consider giving it a star!** ⭐
+**If you found this repository useful, please consider giving it a ⭐ star and 🍴 forking it to explore or extend the project on your own.**
