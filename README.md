@@ -217,6 +217,7 @@ graph TD
 - **Apache Spark Community**: For the powerful distributed computing framework
 - **Databricks**: For the collaborative analytics platform
 - **Open Source Community**: For tools and libraries that made this project possible
+- **Udemy**: [Big Data Engineer](https://www.udemy.com/share/10cMDh3@TbwMYKRyzF_nXnQ7M_xxvEvWFBo3RwmhWer_pVyNMNL4B8qgtLYxIFw1JIcRqkrKDQ==/)
 
 ---
 
