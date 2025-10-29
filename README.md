@@ -1,4 +1,4 @@
-# 🛒 Olist E-Commerce Data Pipeline
+# ☁️ Azure-Powered E-Commerce Data Warehouse Solution
 
 [![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoft-azure&logoColor=white)](https://azure.microsoft.com/)
 [![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat&logo=databricks&logoColor=white)](https://databricks.com/)
@@ -10,7 +10,9 @@
 
 ## 📋 Project Overview
 
-This project implements a comprehensive end-to-end data pipeline for Olist E-Commerce data, transforming raw transactional data into analytics-ready datasets. The pipeline ingests data from multiple sources (GitHub HTTP requests and MySQL databases), processes it through a medallion architecture (Bronze-Silver-Gold), and serves it for downstream analytics and machine learning applications.
+**Built a cloud-based data pipeline simulating enterprise-scale analytics in the Azure ecosystem**
+
+This project implements a comprehensive end-to-end data warehouse solution for Olist E-Commerce data, transforming raw transactional data into analytics-ready datasets. The pipeline ingests data from multiple sources (GitHub HTTP requests, MySQL, and MongoDB databases), processes it through a medallion architecture (Bronze-Silver-Gold), and serves it for downstream analytics and machine learning applications.
 
 **Project Workflow**
 
@@ -38,7 +40,7 @@ The pipeline transforms traditional OLTP (Online Transaction Processing) data in
 ## 🏗️ Project Folder Structure
 
 ```
-Olist_ECommerce_Data_Pipeline/
+Azure-Powered E-Commerce Data Warehouse Solution/
 ├── 📁 ADF_Data_Ingestion_Pipeline/          # Azure Data Factory configurations
 │   ├── ADF - Data Ingestion Pipeline.JPG
 │   └── ForEachInput.json
@@ -201,7 +203,8 @@ graph TD
 
 - **Architecture Diagrams**: Available in `/outputs/diagrams/`
 - **SQL Scripts**: Complete set of DDL and view creation scripts in `/Azure_Synapse_CETs_Views/`
-- **Notebooks**: Detailed Jupyter notebooks with step-by-step implementation `/Data_Ingestion_MySQL_MongoDB/`, `/Databricks_Data_Processing`
+- **Notebooks**: Detailed Jupyter notebooks with step-by-step implementation
+- **Data Models**: Entity-relationship diagrams and schema documentation
 
 ## 👨‍💻 Author & Contact
 
@@ -217,7 +220,6 @@ graph TD
 - **Apache Spark Community**: For the powerful distributed computing framework
 - **Databricks**: For the collaborative analytics platform
 - **Open Source Community**: For tools and libraries that made this project possible
-- **Udemy**: [Big Data Engineer](https://www.udemy.com/share/10cMDh3@TbwMYKRyzF_nXnQ7M_xxvEvWFBo3RwmhWer_pVyNMNL4B8qgtLYxIFw1JIcRqkrKDQ==/)
 
 ---
 
