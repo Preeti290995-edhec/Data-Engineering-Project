@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ☁️ Azure-Powered E-Commerce Data Warehouse Solution
 
 [![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoft-azure&logoColor=white)](https://azure.microsoft.com/)
@@ -224,3 +225,7 @@ graph TD
 ---
 
 **If you found this repository useful, please consider giving it a ⭐ star and 🍴 forking it to explore or extend the project on your own.**
+=======
+# Data-Engineering-Project
+Data Engineering project
+>>>>>>> afd6c040358ce3f274c3e0be8489339b4975f0ba
